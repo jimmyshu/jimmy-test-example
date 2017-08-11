@@ -15,6 +15,6 @@
       countDown() 方法: 使計數器數值 -1
 
 # 範例:
-CountDownLatchExample
+[CountDownLatchExample](https://github.com/jimmyshu/jimmy-test-example/blob/master/src/main/java/jimmy/test/example/CountDownLatchExample.java)
 
     要計算多個數字陣列的合, 啟動多個執行緒, 分別對個別的數字陣列累加, 待所有程序執行完, 由主執行緒回傳結果
