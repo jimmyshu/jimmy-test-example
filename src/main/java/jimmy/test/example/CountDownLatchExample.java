@@ -17,11 +17,13 @@ public class CountDownLatchExample {
 
 	// 以多執行緒 (thread pool) 執行非同步程序
 	private ExecutorService executor;
+
 	// CountDownLatch 由建構子設定一個數字,
 	// 它的 await() 方法, 將使主執行緒等待,
 	// 此時由其他執行緒呼叫 countDown() 方法, 將使數字 -1,
 	// 待數字降為 0, 主執行緒恢復執行
 	private CountDownLatch latch;
+
 	private int sum = 0;
 	private int[][] numbersAry;
 
