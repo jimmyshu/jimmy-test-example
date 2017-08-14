@@ -8,18 +8,22 @@
 
 + CountDownLatch
 
-      CountDownLatch(int count) 建構子: 給定計數器的初始值
+  [CountDownLatch(int count)] 建構子: 給定計數器的初始值
 
-      await() 方法: 使執行緒等待, 待計數器數值為 0, 恢復執行
+  [await()] 方法: 使執行緒等待, 待計數器數值為 0, 恢復執行
 
-      countDown() 方法: 使計數器數值 -1
+  [countDown()] 方法: 使計數器數值 -1
 
-# 範例:
+範例:
+=
 [CountDownLatchExample](https://github.com/jimmyshu/jimmy-test-example/blob/master/src/main/java/jimmy/test/example/CountDownLatchExample.java)
-
-    要計算多個數字陣列的合, 啟動多個執行緒, 分別對個別的數字陣列累加, 待所有程序執行完, 由主執行緒回傳結果
+-
+要計算多個數字陣列的合, 啟動多個執行緒, 分別對個別的數字陣列累加, 待所有程序執行完, 由主執行緒回傳結果
 
     要計算多個數字陣列的合, 啟動多個執行緒, 分別對個別的數字陣列累加, 待所有程序執行完, 由主執行緒回傳結果
- 
-[java.util.concurrent.Executors]: https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Executors.html "test"
+
+[java.util.concurrent.Executors]: https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Executors.html "Executors"
 [newFixedThreadPool(int nThreads)]: https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Executors.html#newFixedThreadPool(int)
+[CountDownLatch(int count)]: https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html#CountDownLatch(int)
+[await()]: https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html#await()
+[countDown()]: https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html#countDown() 'countDown'
